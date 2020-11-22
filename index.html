@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CodingSchool</title>
+
+        <!-- Title Icon -->
+        <link rel="icon" href="images/logo.png" type="image/png" />
+
+        <!-- CSS files -->
+        <link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/desktop.css" type="text/css"/>
+        <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/mobile.css" type="text/css" />
+
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Email JS Free email service -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+        </script>
+
+        <!-- User defined JavaScript -->
+        <script type="text/javascript" src="javascript/script.js"></script> 
+        
+    </head>
+
+    <body>
+
+        <div id="top"></div>
+
+        <!-- HEADER MOBILE -->
+        <div class = "header-mobile" id="header-mobile">
+            <a class="" href="#top">
+                <img class="" src="images/logo.png">
+            </a>
+            <a href="#menu" class="header-icon1" id="toggle-icon1"><i class="fas fa-bars"></i></a>
+            <a href="#menu" class="header-icon2" id="toggle-icon2" onclick="myToggle()"><i class="fas fa-times"></i></a>
+
+            
+        </div>
+
+        <!-- MENU for Header Mobile -->
+        <div class="menu container" id = "menu">
+            <div class="text-center col-md-6 border-light rounded menu-details ">
+                <ul class="navbar-nav mr-auto">
+                    <li class="header-list margin-space">
+                        <a class="nav-link" href="#top" onclick="myFunction()">HOME </a>
+                    </li>
+                    <li class="header-list">
+                        <a class="nav-link" href="#features" onclick="myFunction()">ABOUT </a>
+                    </li>
+                    <li class="header-list">
+                        <a class="nav-link" href="#docs" onclick="myFunction()">DOCS </a>
+                    </li>
+                    <li class="header-list">
+                        <a class="nav-link" href="#contact" onclick="myFunction()">CONTACT </a>
+                    </li>
+                    <li class="header-list">
+                        <a class="nav-link" href="#" onclick="login()">LOGIN </a>
+                    </li>
+                    <li class="header-list">
+                        <a class="nav-link" href="#" onclick="signup() " style="border-style:solid;border-width: 0.5px;">SIGNUP </a>
+                    </li>
+                    
+                </ul>      
+            </div> 
+        </div>
+        
+        <!-- HEADER DESKTOP -->
+        <nav class="navbar navbar-expand-md header" id="header">
+            <a class="navbar-brand" href="#" ><img src="images/logo.png" alt=""></a>
+            
+      
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DOCS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="login()">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="border-style:solid;border-width: 0.5px" onclick="signup()">SIGNUP</a>
+                    </li>
+                    
+                </ul> 
+            </div>
+        </nav>
+
+        <!-- LOGIN -->
+        <div id="login">
+            <nav class="navbar navbar-expand-md header" id="header-login">
+                <a class="" href="index.html" onclick="home()">
+                    <img class="" src="images/logo.png">
+                </a>
+                <a class="nav-link float-div" href="#" style="border-style:solid;border-width: 0.5px" onclick="signup()">SIGNUP</a>
+                <a class="nav-link float-div " href="#" onclick="signup()">Don't have an account ?</a>
+            </nav>
+            <div id="login-div">
+                <div class="login-text col-md-3">
+                    <h1> <br class="clear"><br class="clear">Log in <br>
+                    to CodeSchool</h1>
+                    <p>Enter your details to log in.</p>  
+                </div>
+                <div class="login-box col-md-6 login-mobile">
+                    <h2>LOGIN</h2>
+                    <form id="login-form" style="margin-left:3rem; margin-right:3rem;">
+                        <div class="user-box">
+                            <input type="text" name="from_uname" required="">
+                            <label>UserName/Email</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="from_password" required="">
+                            <label>Password</label>
+                        </div>
+
+                        <a href="ide.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Login
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIGNUP -->
+        <div id="signup">
+            <nav class="navbar navbar-expand-md header" id="header-signup">
+                <a class="" href="index.html" onclick="home()">
+                    <img class="" src="images/logo.png">
+                </a>
+                <a class="nav-link float-div" href="#" style="border-style:solid;border-width: 0.5px" onclick="login()">LOGIN</a>
+                <a class="nav-link float-div " href="#" onclick="login()">Already have an account ?</a>
+            </nav>
+            <div id="signup-div">
+                <div class="login-text col-md-3 ">
+                    <h1> <br class="clear"><br class="clear">Get Startred <br>
+                    for free</h1>
+                    <p>Enter your details to create new account.</p>  
+                </div>
+                <div class="login-box col-md-6 login-mobile">
+                    <h2>SIGNUP</h2>
+                    <form id="signup-form" style="margin-left:2.5rem; margin-right:2.5rem;">
+                        <div class="user-box">
+                            <input type="text" name="from_uname" required="">
+                            <label>UserName</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="email" name="from_mail" required="">
+                            <label>Email</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="from_password" required="">
+                            <label>Password</label>
+                        </div>
+
+                        <a href="#" onclick="login()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            SignUp
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOME -->
+        <div id="home" class="home">
+            <h1><strong>Modern, smart<br>&amp; extensible</strong> cloud IDE</h1>
+            <p>CodeSchool is powerful IDE in the cloud with <br>
+                additional features only a cloud application can give you.</p>
+
+                <a href="ide.html">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Try for free
+                </a>
+                &nbsp;
+                <a href="#" onclick="signup()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Get Started
+                </a>
+
+                <div class="home-image container">
+                    <img src="images/home.png" alt="">
+                </div>
+        </div>
+
+        <!-- FEATURES -->
+        <div id="features" class="home" >
+            <br><br>
+            <h1>What makes us top-notch</h1>
+            <div class="row features" >
+                <div class="col-md-4">
+                    <div class="features-card">
+                        <i class="fas fa-bolt"></i>
+                        <h2>Fast speed</h2>
+                        <p>Requires negligible internet speed ony while compiling the code, no backround data is needed.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="features-card">
+                        <i class="fab fa-free-code-camp"></i>
+                        <h2>Free to use</h2>
+                        <p>No signup charges, the IDE is free to use for lifetime with extnsive support from the team.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="features-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h2>Mutiple support</h2>
+                        <p>No restriction to use it only on one device, you can use it anywhere anytime just by logging in.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" onclick="signup()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Get Started
+            </a>
+            
+                
+        </div>
+
+        
+        <!-- DOCS -->
+        <div class="docs container" id="docs">
+            <br><br>
+            <h1 style="font-size: 48px;">Points to note</h1><br>
+
+            <ul class="list-group ">
+                <li class="list-group-item shadow-style">The coding space is divided into 5 main parts...</li>
+                <li class="list-group-item shadow-style">Head block which can be used to insert meta data like external files,titles etc...</li>
+                <li class="list-group-item shadow-style">Script block which can be used to insert external JavaScript code...</li>
+                <li class="list-group-item shadow-style">Html block which can be used to insert the contents of the body tag...</li>
+                <li class="list-group-item shadow-style">Css block which can be used to insert external css code...</li>
+                <li class="list-group-item shadow-style">The active block is always highlighted...</li>
+                <li class="list-group-item shadow-style">To view the output click on Output button...</li>
+              </ul>
+        </div>
+
+        <!-- RECOMMEND -->
+        <div class="col-md-12 recommend" id="recommend">
+            <h1 style="font-size: 3.5rem;text-align: center;">Testimonials</h1>
+            <br>
+            
+            <div class="text-center rounded recommend-details ">
+                <div class=" mySlides" id="slide">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/rec_1.png" style="width:200px;" class="rounded-circle">
+                        </div>
+                        <div class="col-md-8" style="font-size:1.8rem;padding: 1rem;text-align: center;" id="r-text1">
+                            CodeTasty radically simplifies our daily tasks,
+                            which gives us more space to focus on what’s important.
+                            <hr>
+                            <h2 style="font-size: 2.5rem;">~Akarsh Jaiswal</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/rec_2.png" style="width:200px;" class="rounded-circle">
+                        </div>
+                        <div class="col-md-8" style="font-size:1.8rem;padding: 1rem;text-align: center;" id="r-text2">
+                            CodeSchool radically simplifies our daily tasks,
+                            which gives us more space to focus on what’s important.
+                            <hr>
+                            <h2 style="font-size: 2.5rem;">~Akarsh Jaiswal</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/rec_3.png" style="width:200px;" class="rounded-circle">
+                        </div>
+                        <div class="col-md-8" style="font-size:1.8rem;padding: 1rem;text-align: center;" id="r-text3">
+                            CodePen radically simplifies our daily tasks,
+                            which gives us more space to focus on what’s important.
+                            <hr>
+                            <h2 style="font-size: 2.5rem;">~Akarsh Jaiswal</h2>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="col-md-12" >
+                    <hr class="clear">
+                    <i class="fas fa-angle-double-left" onclick="plusDivs(-1)" style="font-size: 3rem;text-align: center;"></i>
+                    &nbsp;
+                    <i class="fas fa-angle-double-right" onclick="plusDivs(1)" style="font-size: 3rem;text-align: center;"></i>
+                </div>
+            </div> 
+        </div>
+    
+        <!-- CONTACT -->
+        <div id="contact">
+            <br><br><br><br>
+            
+            <div class="login-box login-special">
+                <h2>CONTACT</h2>
+                <form id="contact-form">
+                    <div class="user-box">
+                        <input type="text" name="from_name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="email" name="from_mail" required="">
+                        <label>E-mail</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="from_mail" required="">
+                        <label>Message</label>
+                    </div>
+                    
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <input type="submit" value="Submit" style="font-size: 0px;opacity: 0;">
+                        Submit
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <br class="clear"><br class="clear">
+        <!-- FOOTER -->
+        <footer class="bg-soft bd-footer p-3 pt-5 p-md-5 text-center" id="footer">
+            <div class="container">
+                <a class="" href="#top">
+                    <img class="" src="images/logo.png">
+                </a>
+                
+                <p class="h5 m-3">If you have any query, Please get in touch.</p>
+                <hr>
+                <ul class="d-flex row justify-content-center list-unstyled">
+                    <li class="m-1 col-md-5">
+                        <p>
+                            <span class="icon">
+                                <span class="fas fa-envelope m-1 p-1 icons"></span>
+                                akarsh.jais@gmail.com
+                            </span>
+                        </p>
+                    </li>
+                    <li class="m-1 col-md-5">
+                        <p>
+                            <span class="icon">
+                                <span class="fas fa fa-phone m-1 p-1 icons"></span>
+                                +91-9026750808
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <hr class="mx-5">
+                <ul class="d-flex justify-content-center list-unstyled mb-4">
+                    <li class="m-2 mb-1">
+                        <a href="https://www.instagram.com/whoakarsh/" target="_blank" class="button-footer rounded-circle">
+                            <span class="fab fa-instagram social-icon"></span>
+                        </a>
+                    </li>
+                    <li class="m-2 mb-1">
+                        <a href="https://github.com/whoakarsh" target="_blank" class="button-footer rounded-circle">
+                            <span class="fab fa-github social-icon"></span>
+                        </a>
+                    </li>
+                    <li class="m-2 mb-1">
+                        <a href="https://www.linkedin.com/in/whoakarsh/" target="_blank" class="button-footer rounded-circle">
+                            <span class="fab fa-linkedin-in social-icon"></span>
+                        </a>
+                    </li>
+                    <li class="m-2 mb-1">
+                        <a href="https://wa.me/919026750808" target="_blank" class="button-footer rounded-circle">
+                            <span class="fab fa-whatsapp social-icon"></span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <p class="h5 mb-3">
+                    Made With <span class="fas fa-heart m-1 icon text-danger"></span> by Akarsh Jaiswal
+                </p>
+            </div>
+        </footer>
+            
+    </body>
+</html>
