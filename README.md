@@ -1,9 +1,8 @@
 <h1>Coding School<h1>
 
+<h2> <u>Live Project Link</u> :-  https://codingschoolide.netlify.app/ </h2>
 
-<h2> <br><u>Live Project Link</u> :-  https://codingschoolide.netlify.app/ </h2>
-
-<h3>An online IDE designed using :-
+<h4>An online IDE designed using :-
     <ul>
     <li>HTML</li>
     <li>CSS</li>
@@ -11,5 +10,5 @@
     <li>Jquery</li>
     <li>Bootstrap</li>
     </ul>
-</h3>
+</h4>
                 
