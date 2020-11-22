@@ -1,12 +1,10 @@
 /* HEADER */
 
-#box1 { display: none; }
-#box2 { display: none; }
-#box3 { display: none; }
-#box4 { display: none; }
-
-#box7 { display: none; }
+.cleardd { display: none!important; }
 #cleard { display: none; }
+#head {display: none;}
+#script {display: none;}
+#css {display: none;}
 
 .header-mobile
 {
@@ -79,13 +77,23 @@ html,body
     margin-bottom: 0px;
 }
 
-#editor {
-    height: 100%;
-    width:104%;
-    display:inline-block;
-    border-radius: 3%;
-    margin-right: 0px;
-    
+#html1 {
+  height: 100vh;
+  width:104%;
+  display:inline-block;
+  border-radius: 3%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#head1, #css1, #script1 {
+height: 100vh;
+width:104%;
+display:inline-block;
+border-radius: 3%;
+display: block;
+margin-right: auto;
+margin-left: auto;
 }
 
 #container {
@@ -219,3 +227,16 @@ html,body
       bottom: 100%;
     }
   }
+
+
+  /* DOCS */
+  .docs { font-size: 1.5rem;text-align: center;color:white;display: none; width: 60%!important;}
+  .docs h1 {font-size: 4rem!important;}
+.shadow-style
+{
+    background: rgba(0,0,0,.5)!important;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6)!important;
+    box-sizing: border-box!important;
+    margin-bottom: 0px;
+    color:white;
+}

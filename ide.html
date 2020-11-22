@@ -42,14 +42,14 @@
                         <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">DOCS</a>
+                        <a class="nav-link" href="#" onclick="docs()">DOCS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">CONTACT</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="ide.html" style="border-style:solid;border-width: 0.5px">IDE</a>
+                        <a class="nav-link" href="#" onclick="ide()" style="border-style:solid;border-width: 0.5px">IDE</a>
                     </li>
                     
                 </ul> 
@@ -66,25 +66,6 @@
                 <span onclick="ide()" style="border-style:solid;border-width: 0.5px;font-size: 1.5rem;padding-left: 0.3rem;padding-right: 0.3rem;">IDE</span>
             </a>
         </nav>
-
-        <br id="box7">
-        <div class="login-box">
-            <a href="#" onclick="code_desktop()" class="cbt clear" id="box5">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                CODE
-            </a>
-            <a href="#" onclick="output_desktop()" class="obt clear" id="box6">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                OUTPUT
-            </a>
-
-        </div>  
 
         <!-- IDE -->
         <div id='container' class="row">
@@ -111,15 +92,22 @@
                         <span></span>
                         CSS
                     </a>
+                    <a href="#" onclick="scripte()" class="sbt clear" style="margin: 0rem!important;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        SCRIPT
+                    </a>
                     <div class="line-2" >
-                        <a href="#" onclick="scripte()" class="sbt" style="margin: 0rem!important;">
+                        <a href="#" onclick="scripte()" class="sbt cleardd" style="margin: 0rem!important;">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             SCRIPT
                         </a>
-                        <a href="#" onclick="output()" class="obt" style="margin: 0rem!important;">
+                        <a href="#" onclick="output()" class="obt cleardd" style="margin: 0rem!important;">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -130,51 +118,6 @@
                     
                 </div>  
                 <div id="head1" class="shadow-style">
-                </div>
-            </div>
-
-            <div class="col-md-6" id="script">
-                <div class="login-box">
-                    <a href="#" onclick="heade()" class="hbt">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        HEAD
-                    </a>
-                    <a href="#" onclick="htmle()" class="mbt active">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        HTML
-                    </a>
-                    <a href="#" onclick="csse()" class="cbt">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        CSS
-                    </a>
-                    <div class="line-2" >
-                        <a href="#" onclick="scripte()" class="sbt" style="margin: 0rem!important;">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            SCRIPT
-                        </a>
-                        <a href="#" onclick="output()" class="obt" style="margin: 0rem!important;">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            OUTPUT
-                        </a>
-                    </div>
-                    
-                </div>  
-                <div id="script1" class="shadow-style">
                 </div>
             </div>
 
@@ -201,15 +144,22 @@
                         <span></span>
                         CSS
                     </a>
+                    <a href="#" onclick="scripte()" class="sbt clear" style="margin: 0rem!important;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        SCRIPT
+                    </a>
                     <div class="line-2" >
-                        <a href="#" onclick="scripte()" class="sbt" style="margin: 0rem!important;">
+                        <a href="#" onclick="scripte()" class="sbt cleardd" style="margin: 0rem!important;">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             SCRIPT
                         </a>
-                        <a href="#" onclick="output()" class="obt" style="margin: 0rem!important;">
+                        <a href="#" onclick="output()" class="obt cleardd" style="margin: 0rem!important;">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -220,6 +170,58 @@
                     
                 </div>  
                 <div id="css1" class="shadow-style">
+                </div>
+            </div>
+
+            <div class="col-md-6" id="script">
+                <div class="login-box">
+                    <a href="#" onclick="heade()" class="hbt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        HEAD
+                    </a>
+                    <a href="#" onclick="htmle()" class="mbt active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        HTML
+                    </a>
+                    <a href="#" onclick="csse()" class="cbt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        CSS
+                    </a>
+                    <a href="#" onclick="scripte()" class="sbt clear" style="margin: 0rem!important;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        SCRIPT
+                    </a>
+                    <div class="line-2" >
+                        <a href="#" onclick="scripte()" class="sbt cleardd" style="margin: 0rem!important;">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            SCRIPT
+                        </a>
+                        <a href="#" onclick="output()" class="obt cleardd" style="margin: 0rem!important;">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            OUTPUT
+                        </a>
+                    </div>
+                    
+                </div>  
+                <div id="script1" class="shadow-style">
                 </div>
             </div>
 
@@ -246,15 +248,22 @@
                         <span></span>
                         CSS
                     </a>
+                    <a href="#" onclick="scripte()" class="sbt clear" style="margin: 0rem!important;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        SCRIPT
+                    </a>
                     <div class="line-2" >
-                        <a href="#" onclick="scripte()" class="sbt" style="margin: 0rem!important;">
+                        <a href="#" onclick="scripte()" class="sbt cleardd" style="margin: 0rem!important;">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             SCRIPT
                         </a>
-                        <a href="#" onclick="output()" class="obt" style="margin: 0rem!important;">
+                        <a href="#" onclick="output()" class="obt cleardd" style="margin: 0rem!important;">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -270,36 +279,43 @@
 
             <div class="rounded col-md-6" id="output">
                 <div class="login-box">
-                    <a href="#" onclick="heade()" class="hbt">
+                    <a href="#" onclick="heade()" class="hbt cleardd">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         HEAD
                     </a>
-                    <a href="#" onclick="htmle()" class="mbt active">
+                    <a href="#" onclick="htmle()" class="mbt active cleardd">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         HTML
                     </a>
-                    <a href="#" onclick="csse()" class="cbt">
+                    <a href="#" onclick="csse()" class="cbt cleardd">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         CSS
                     </a>
+                    <a href="#" onclick="output()" class="obt active clear">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        OUTPUT
+                    </a>
                     <div class="line-2" >
-                        <a href="#" onclick="scripte()" class="sbt" style="margin: 0rem!important;">
+                        <a href="#" onclick="scripte()" class="sbt cleardd" style="margin: 0rem!important;">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             SCRIPT
                         </a>
-                        <a href="#" onclick="output()" class="obt" style="margin: 0rem!important;">
+                        <a href="#" onclick="output()" class="obt active cleardd" style="margin: 0rem!important;">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -316,7 +332,6 @@
 
         <!-- DOCS -->
         <br><br>
-        <!-- DOCS -->
         <div class="docs container" id="docs">
             <h1 style="font-size: 48px;">Points to note</h1><br>
 
@@ -330,7 +345,7 @@
                 <li class="list-group-item shadow-style">To view the output click on Output button...</li>
               </ul>
         </div>
-
+        <br><br>
         <script type="text/javascript" src="javascript/script_ide.js"></script> 
         
 

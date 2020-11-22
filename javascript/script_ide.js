@@ -168,6 +168,20 @@ function htmle()
           $('.sbt').removeClass("active");
           
       }
+  else{
+    $('#html').show();
+    $('#css').hide();
+    $('#head').hide();
+    $('#script').hide();
+    $('#docs').hide();
+
+
+    $('.mbt').addClass("active");
+    $('.hbt').removeClass("active");
+    $('.cbt').removeClass("active");
+    $('.sbt').removeClass("active");
+
+  }
 }
 function heade()
 {
@@ -182,12 +196,27 @@ function heade()
 
 
           $('.hbt').addClass("active");
-          $('.obt').removeClass("active");
           $('.mbt').removeClass("active");
           $('.cbt').removeClass("active");
+          $('.obt').removeClass("active");
+
           $('.sbt').removeClass("active");
           
       }
+    else
+    {
+      $('#html').hide();
+          $('#css').hide();
+          $('#head').show();
+          $('#script').hide();
+          $('#docs').hide();
+
+
+          $('.hbt').addClass("active");
+          $('.mbt').removeClass("active");
+          $('.cbt').removeClass("active");
+          $('.sbt').removeClass("active");
+    }
 }
 function csse()
 {
@@ -208,6 +237,21 @@ function csse()
           $('.sbt').removeClass("active");
           
       }
+  else
+  {
+    $('#html').hide();
+          $('#css').show();
+          $('#head').hide();
+          $('#script').hide();
+          $('#docs').hide();
+
+
+          $('.cbt').addClass("active");
+          $('.hbt').removeClass("active");
+          $('.mbt').removeClass("active");
+          $('.sbt').removeClass("active");
+
+  }
 }
 function scripte()
 {
@@ -228,6 +272,21 @@ function scripte()
           $('.obt').removeClass("active");
           
       }
+    else
+    {
+      $('#html').hide();
+          $('#css').hide();
+          $('#head').hide();
+          $('#script').show();
+          $('#docs').hide();
+
+
+          $('.sbt').addClass("active");
+          $('.hbt').removeClass("active");
+          $('.mbt').removeClass("active");
+          $('.cbt').removeClass("active");
+
+    }
 }
 function output()
 {
@@ -270,40 +329,55 @@ function ide()
           $('.sbt').removeClass("active");
           
       }
+  else
+  {
+    $('#container').show();
+          $('#output').show();
+          $('#html').show();
+          $('#css').hide();
+          $('#head').hide();
+          $('#script').hide();
+          $('#docs').hide();
+
+
+          $('.mbt').addClass("active");
+          $('.hbt').removeClass("active");
+          $('.obt').addClass("active");
+          $('.cbt').removeClass("active");
+          $('.sbt').removeClass("active");
+
+  }
 }
 function docs()
 {
-  if($("#header-ide").is(":visible"))
-      {
-          $('#container').hide();
-          $('#docs').show();
-      }
+  $('#container').hide();
+  $('#docs').show();
 }
 
 //TOGGLE DIV DESKTOP
-function code_desktop()
-{
-  if($("#header").is(":visible"))
-      {
-          $('#output').hide();
-          $('#code').show();
-          $('#code').addClass("col-md-12");
-          $('#code').removeClass("col-md-6");
+// function code_desktop()
+// {
+//   if($("#header").is(":visible"))
+//       {
+//           $('#output').hide();
+//           $('#code').show();
+//           $('#code').addClass("col-md-12");
+//           $('#code').removeClass("col-md-6");
 
-          $('.cbt').addClass("active");
-          $('.obt').removeClass("active");  
-      }
-}
-function output_desktop()
-{
-  if($("#header").is(":visible"))
-      {
-        $('#output').show();
-        $('#code').hide();
-        $('#output').addClass("col-md-12");
-        $('#output').removeClass("col-md-6");
+//           $('.cbt').addClass("active");
+//           $('.obt').removeClass("active");  
+//       }
+// }
+// function output_desktop()
+// {
+//   if($("#header").is(":visible"))
+//       {
+//         $('#output').show();
+//         $('#code').hide();
+//         $('#output').addClass("col-md-12");
+//         $('#output').removeClass("col-md-6");
 
-        $('.obt').addClass("active");
-        $('.cbt').removeClass("active");  
-      }
-}
+//         $('.obt').addClass("active");
+//         $('.cbt').removeClass("active");  
+//       }
+// }

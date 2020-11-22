@@ -503,3 +503,16 @@ footer .icons
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
+
+/* DOCS */
+.docs { font-size: 1.5rem;text-align: center;color:white;width: 60%!important;}
+.docs h1 {font-size: 4rem!important;}
+.shadow-style
+{
+  background: rgba(0,0,0,.5)!important;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6)!important;
+  box-sizing: border-box!important;
+  margin-bottom: 0px;
+  color:white;
+}
+
