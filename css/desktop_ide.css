@@ -82,23 +82,19 @@ html,body
   width:104%;
   display:inline-block;
   border-radius: 3%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
 }
 #head1, #css1, #script1 {
 height: 100vh;
-width:104%;
+width:100%;
 display:inline-block;
 border-radius: 3%;
-display: block;
-margin-right: auto;
-margin-left: auto;
 }
 
 #container {
+  margin-left:0.5rem;
+
 	height:100%;
-	width:auto;
+	width:99%;
   white-space : nowrap; 
   overflow : hidden;
   position:relative;
@@ -108,7 +104,7 @@ margin-left: auto;
     margin-left: 0px;
     height:100%;
     display:inline-block;
-    width:100%;
+    width:102%;
     border-radius: 3%;
     background-color: white;
 }
